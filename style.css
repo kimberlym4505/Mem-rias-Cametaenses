@@ -1,0 +1,138 @@
+/* Reset básico para garantir que estilos padrão sejam consistentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+}
+
+/* Estilos para o título da imagem */
+.Titulo-imagem {
+    font-size: 5.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    font-weight: 700;
+}
+
+/* Estilos para a seção de imagem */
+.sec-imagem {
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz com que a imagem cubra completamente a área */
+    display: block;
+}
+
+/* Estilos para a seção de história */
+.sec-historia {
+    display: flex;
+    justify-content: space-between; /* Espaço entre o texto e as imagens */
+    padding: 2% 15%; /* Ajuste o padding conforme necessário */
+}
+
+/* Estilos para o texto */
+.txt {
+    width: 50%;
+    font-family: 'Open Sans', sans-serif;
+    color: #000f34;
+}
+
+.txt > h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #032c92;
+    margin-bottom: 15px;
+}
+
+.txt > p {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Estilos para a seção das imagens */
+.img {
+    width: 40%;
+    display: flex;
+    flex-direction: column; /* Coloca as imagens em uma coluna */
+    gap: 20px; /* Espaço entre as imagens */
+    margin-left: 10%;
+}
+
+.img img {
+    width: 100%; /* As imagens vão ocupar toda a largura da seção .img */
+    height: auto;
+    object-fit: cover; /* Garante que as imagens sejam cortadas sem distorção */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .sec-historia {
+        flex-direction: column;
+        align-items: center;
+        padding: 2% 5%;
+    }
+
+    .txt {
+        width: 100%;
+        margin-bottom: 20px; /* Espaçamento entre o texto e as imagens */
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .img img {
+        width: 80%; /* Imagens ocupando mais espaço em telas menores */
+        margin-bottom: 10px;
+    }
+}
+header{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    box-shadow: -1px 9px 9px 6px black;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+
+}
+.list{
+    margin: 2%;
+    transition: 0.5s;
+}
+.list:hover{
+    scale: 1.1;
+} 
+.link{
+   text-decoration: none;
+   color: #032c92;
+
+}
+.nome-site{
+    font-size: 2rem;
+    color:#032c92 ;
+}
